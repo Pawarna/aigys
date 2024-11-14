@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIGYS: IoT for Irrigation System</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Dashboard Monitoring</h1>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle" />
+          <span class="slider"></span>
+        </label>
+      </header>
+      <div class="data-section">
+        <div class="data-card moisture">
+          <p>Kelembaban Tanah</p>
+          <div class="progress-bar">
+            <div id="moisturize-progress" class="progress-fill">
+              <div class="wave"></div>
+            </div>
+          </div>
+          <span id="moisturize-level" class="data-value">0%</span>
+        </div>
+        <div class="data-card river">
+          <p>Level Air Sungai</p>
+          <span id="river-level" class="data-value">Loading...</span
+          ><span> cm</span>
+        </div>
+        <div class="data-card storage">
+          <p>Level Air Penyimpanan</p>
+          <span id="storage-level" class="data-value">Loading...</span
+          ><span> cm</span>
+        </div>
+        <div class="data-card pump">
+          <p>Status Pompa</p>
+          <span id="pump-status" class="data-value">Loading...</span>
+        </div>
+        <div class="data-card gate">
+          <p>Status Pintu Air</p>
+          <span id="gate-status" class="data-value">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
